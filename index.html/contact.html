@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Iyunga Secondary School | Contact</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="header">
+
+    <div class="logo">
+
+        <h2>Iyunga Secondary School</h2>
+
+        <span>Education for Excellence</span>
+
+    </div>
+
+
+    <nav class="navbar">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="academics.html">Academics</a>
+
+        <a href="students.html">Students</a>
+
+        <a href="news.html">News</a>
+
+        <a href="gallery.html">Gallery</a>
+
+        <a href="contact.html" class="active">Contact</a>
+
+    </nav>
+
+
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+</header>
+
+
+<section class="page-header">
+
+    <h1>Contact Us</h1>
+
+    <p>We would love to hear from you.</p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="contact-grid">
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-info">
+
+            <h2>Get In Touch</h2>
+
+            <p>
+                Feel free to contact Iyunga Secondary School
+                for more information.
+            </p>
+
+
+            <div class="contact-item">
+
+                <strong>📍 Address</strong>
+
+                <p>
+                    Iyunga, Mbeya, Tanzania
+                </p>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <strong>📞 Phone</strong>
+
+                <p>
+                    +255 684392094
+                </p>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <strong>📧 Email</strong>
+
+                <p>
+                    info@iyungasecondary.ac.tz
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+
+        <form class="contact-form"
+              onsubmit="sendMessage(event)">
+
+            <h2>Send Us a Message</h2>
+
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+
+            <input
+                type="text"
+                id="subject"
+                placeholder="Subject"
+                required
+            >
+
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                rows="6"
+                required
+            ></textarea>
+
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+
+            <p id="form-message"></p>
+
+        </form>
+
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="copyright">
+
+        <p>
+            © <span id="year"></span>
+            Iyunga Secondary School. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
